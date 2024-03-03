@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Quote Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 style="color: cyan;">Random Quote Generator</h1>
+    <div class="quote-box" id="quoteBox">
+      <p id="quoteText">Loading...</p>
+    </div>
+    <div class="color-buttons">
+      <button onclick="changeColor('red')" style="color: red;">Red</button>
+      <button onclick="changeColor('blue')" style="color: blue;">Blue</button>
+      <button onclick="changeColor('green')" style="color: green;">Green</button>
+      <button onclick="changeColor('yellow')" style="color: rgb(157, 189, 18);">Yellow</button>
+    </div>
+  </div>
+
+  <div class="convertor">
+    <h1 style="color: cyan;">MAX, MIN, SUM, AVERAGE</h1>
+    <input type="text" id="weightInput" placeholder="Enter weight" style="height: 50px;  width: 200px;"/>
+    <select id="unitSelector" style="height: 55px;  width: 200px;">
+      <option value="kg">Kilograms (kg) to Pounds (lb)</option>
+      <option value="lb">Pounds (lb) to Kilograms (kg)</option>
+    </select>
+    <button onclick="convert()">Convert</button>
+    <span id="result"></span>
+  </div>
+
+
+  <div class="analyzer">
+    <h1 style="color: cyan;">Number Series Analyzer</h1>
+    <form id="numberForm">
+        <label for="numberInput">Enter numbers separated by commas:</label><br>
+        <input type="text" id="numberInput" name="numberInput" required style="margin-top: 10px; height: 50px;  width: 200px;"><br>
+        <button type="submit" style="margin-top: 5px;">Analyze</button>
+    </form>
+    <div id="output"></div>
+  </div>
+
+
+  <div class="magic-box">
+    <textarea id="textInput" rows="10" cols="50"></textarea><br>
+
+    <button onclick="clearAll()">Clear All</button>
+    <button onclick="toggleCase()">Capitalize</button>
+    <button onclick="sortLines()">Sort</button>
+    <button onclick="reverseLines()">Reverse</button>
+    <button onclick="stripBlank()">Strip Blank</button>
+    <button onclick="addNumbers()">Add Numbers</button>
+    <button onclick="shuffleLines()">Shuffle</button>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
